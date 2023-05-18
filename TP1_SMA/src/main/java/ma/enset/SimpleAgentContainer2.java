@@ -11,8 +11,9 @@ public class SimpleAgentContainer2 {
         Runtime runtime=Runtime.instance();
         ProfileImpl profile=new ProfileImpl();
         profile.setParameter("host","localhost");
+        String password="1234567812345678";//128
         AgentContainer agentContainer= runtime.createAgentContainer(profile);
-        AgentController agentControllerClient =agentContainer.createNewAgent("server","ma.enset.AgentServer",new Object[]{});
+        AgentController agentControllerClient =agentContainer.createNewAgent("server","ma.enset.AgentServer",new Object[]{password});
         agentControllerClient.start();
     }
 }

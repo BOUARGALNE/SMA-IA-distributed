@@ -12,7 +12,8 @@ public class SimpleAgentContainer1 {
         ProfileImpl profile=new ProfileImpl();
         profile.setParameter("host","localhost");
         AgentContainer agentContainer= runtime.createAgentContainer(profile);
-        AgentController agentControllerClient =agentContainer.createNewAgent("client","ma.enset.AgentClient",new Object[]{"BDCC1","SMA"});
+        String password="1234567812345678";//128
+        AgentController agentControllerClient =agentContainer.createNewAgent("client","ma.enset.AgentClient",new Object[]{password});
         agentControllerClient.start();
     }
 }
