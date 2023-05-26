@@ -2,12 +2,12 @@
 
 
 
-public class IslandAgent extends Agent {
+       public class IslandAgent extends Agent {
 
-    private GenticAlgorithm ga=new GenticAlgorithm();
+       private GenticAlgorithm ga=new GenticAlgorithm();
     
-    @Override
-    protected void setup() {
+      @Override
+      protected void setup() {
         SequentialBehaviour sequentialBehaviour=new SequentialBehaviour();
 
         sequentialBehaviour.addSubBehaviour(new OneShotBehaviour() {
