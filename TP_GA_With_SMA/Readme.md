@@ -1,9 +1,11 @@
 * crée et démarre plusieurs agents îles (IslandAgent) en fonction de la valeur de GAUtils.ISLAND_NUMBER, puis crée et démarre un agent maître (MasterAgent). Ces agents peuvent interagir et coopérer pour exécuter des tâches spécifiques dans le système multi-agents.
 
 
-public class IslandAgent extends Agent {
-    private GenticAlgorithm ga=new GenticAlgorithm();
 
+public class IslandAgent extends Agent {
+
+    private GenticAlgorithm ga=new GenticAlgorithm();
+    
     @Override
     protected void setup() {
         SequentialBehaviour sequentialBehaviour=new SequentialBehaviour();
@@ -20,7 +22,7 @@ public class IslandAgent extends Agent {
             int iteration=1;
             @Override
             public void action() {
-//                System.out.println("Iteration : "+iteration);
+             System.out.println("Iteration : "+iteration);
                 ga.crossover();
                 ga.mutation();
                 ga.sortPopulation();
