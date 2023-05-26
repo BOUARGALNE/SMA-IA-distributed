@@ -2,7 +2,7 @@
 
 
 #  IslandAgent 
-la classe IslandAgent représente un agent île qui exécute un algorithme génétique. Il initialise la population, effectue des itérations d'opérations génétiques, envoie des messages contenant la fitness du meilleur individu et se désenregistre lorsque l'agent est arrêté.
+la classe IslandAgent représente un agent  qui exécute un algorithme génétique. Il initialise la population, effectue des itérations d'opérations génétiques, envoie des messages contenant la fitness du meilleur individu et se désenregistre lorsque l'agent est arrêté.
 
        public class IslandAgent extends Agent {
 
