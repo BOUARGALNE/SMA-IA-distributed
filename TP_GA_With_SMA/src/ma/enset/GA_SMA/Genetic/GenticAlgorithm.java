@@ -1,4 +1,4 @@
-package ma.enset.bddc;
+package ma.enset.GA_SMA.Genetic;
 
 import java.util.*;
 
@@ -62,5 +62,8 @@ public class GenticAlgorithm {
     }
     public int getBestFintness(){
         return population[0].getFitness();
+    }
+    public Individual[] getPopulation() {
+        return population;
     }
 }

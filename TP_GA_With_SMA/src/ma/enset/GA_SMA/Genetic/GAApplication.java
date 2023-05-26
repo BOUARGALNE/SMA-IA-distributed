@@ -1,7 +1,6 @@
-package ma.enset.bddc;
+package ma.enset.GA_SMA.Genetic;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Arrays;
 
 public class GAApplication {
 
@@ -17,7 +16,7 @@ public class GAApplication {
             ga.crossover();
             ga.mutation();
             ga.sortPopulation();
-            ga.showPopulation();
+            System.out.println(Arrays.toString(ga.getPopulation()[0].getChromosome()) +"  "+ga.getPopulation()[0].getFitness());
             cpt++;
         }
 

@@ -1,4 +1,4 @@
-package ma.enset.bddc;
+package ma.enset.GA_SMA.Genetic;
 
 public class GAUtils {
     public static final int CHROMOSOME_SIZE=12;
@@ -7,5 +7,5 @@ public class GAUtils {
     public static final int MAX_ITERATIONS=2000;
     public static final String objectif="bonjour BDCC";
     public static final String ALPHAS="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
+    public static final int ISLAND_NUMBER=5;
 }

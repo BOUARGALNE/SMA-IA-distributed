@@ -1,7 +1,6 @@
-package ma.enset.bddc;
+package ma.enset.GA_SMA.Genetic;
 
 import java.util.Arrays;
-import java.util.List;
 import java.util.Random;
 
 public class Individual implements Comparable{
