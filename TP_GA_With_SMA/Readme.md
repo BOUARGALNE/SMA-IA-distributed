@@ -1,7 +1,7 @@
 * crée et démarre plusieurs agents îles (IslandAgent) en fonction de la valeur de GAUtils.ISLAND_NUMBER, puis crée et démarre un agent maître (MasterAgent). Ces agents peuvent interagir et coopérer pour exécuter des tâches spécifiques dans le système multi-agents.
 
 
-#la classe IslandAgent représente un agent île qui exécute un algorithme génétique. Il initialise la population, effectue des itérations d'opérations génétiques, envoie des messages contenant la fitness du meilleur individu et se désenregistre lorsque l'agent est arrêté.
+# la classe IslandAgent représente un agent île qui exécute un algorithme génétique. Il initialise la population, effectue des itérations d'opérations génétiques, envoie des messages contenant la fitness du meilleur individu et se désenregistre lorsque l'agent est arrêté.
 
        public class IslandAgent extends Agent {
 
