@@ -1,5 +1,13 @@
 * crée et démarre plusieurs agents îles (IslandAgent) en fonction de la valeur de GAUtils.ISLAND_NUMBER, puis crée et démarre un agent maître (MasterAgent). Ces agents peuvent interagir et coopérer pour exécuter des tâches spécifiques dans le système multi-agents.
 
+package ma.enset.GA_SMA;
+
+import jade.core.Agent;
+import jade.core.ProfileImpl;
+import jade.wrapper.AgentContainer;
+import jade.core.Runtime;
+import jade.wrapper.ControllerException;
+
 public class MainContainer extends Agent {
     public static void main(String[] args) throws ControllerException {
         Runtime runtime=Runtime.instance();
