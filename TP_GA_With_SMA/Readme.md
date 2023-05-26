@@ -13,20 +13,7 @@
         masterAgent.start();
     }](https://github.com/BOUARGALNE/SMA-IA-distributed/blob/8fbb191cd22b31809e5ce78ad1f18cdf9e46a8ef/TP_GA_With_SMA/src/ma/enset/GA_SMA/IslandAgent.java#L20)
 
-}package ma.enset.GA_SMA;
-
-import jade.core.Agent;
-import jade.domain.DFService;
-import jade.domain.FIPAAgentManagement.DFAgentDescription;
-import jade.domain.FIPAAgentManagement.ServiceDescription;
-import jade.domain.FIPAException;
-import jade.core.behaviours.Behaviour;
-import jade.core.behaviours.OneShotBehaviour;
-import jade.core.behaviours.SequentialBehaviour;
-import jade.lang.acl.ACLMessage;
-import ma.enset.GA_SMA.Genetic.GAUtils;
-import ma.enset.GA_SMA.Genetic.GenticAlgorithm;
-
+}
 
 public class IslandAgent extends Agent {
     private GenticAlgorithm ga=new GenticAlgorithm();
