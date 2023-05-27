@@ -1,6 +1,15 @@
 * crée et démarre plusieurs agents îles (IslandAgent) en fonction de la valeur de GAUtils.ISLAND_NUMBER, puis crée et démarre un agent maître (MasterAgent). Ces agents peuvent interagir et coopérer pour exécuter des tâches spécifiques dans le système multi-agents.
+# MainContainer
 
-
+    public class MainContainer extends Agent {
+    public static void main(String[] args) throws ControllerException {
+        Runtime runtime=Runtime.instance();
+        ProfileImpl profile=new ProfileImpl();
+        profile.setParameter("gui","true");
+        AgentContainer agentContainer=runtime.createMainContainer(profile);
+        agentContainer.start();
+     }
+    }
 #  IslandAgent 
 la classe IslandAgent représente un agent  qui exécute un algorithme génétique. Il initialise la population, effectue des itérations d'opérations génétiques, envoie des messages contenant la fitness du meilleur individu et se désenregistre lorsque l'agent est arrêté.
 
@@ -68,4 +77,4 @@ la classe IslandAgent représente un agent  qui exécute un algorithme génétiq
             throw new RuntimeException(e);
         }
       }
- }
+    }
